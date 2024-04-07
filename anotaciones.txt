@@ -1,0 +1,17 @@
+NavePlayer:
+	*Movimiento
+	*Disparo(Normal/doble)
+	*Misiles
+	*Escudo
+	*Laser(F-Laser)
+	*Option(secuaces indestructibles q disparan cuando dispara gradius)
+Enemies:
+	*3 type of enemies
+		-Following
+		-Patrón de entrada y salida
+		-Patrón aleatorio
+	*Movimientos diferentes
+	*La capacidad de disparar
+	*Destrucción al salir de la pantalla 
+Instanciador
+HUD
