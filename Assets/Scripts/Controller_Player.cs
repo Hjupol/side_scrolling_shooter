@@ -36,26 +36,26 @@ public class Controller_Player : MonoBehaviour
     
     public static Controller_Player _Player;
     
-    //private void Awake()
-    //{
-    //    if (_Player == null)
-    //    {
-    //        _Player = GameObject.FindObjectOfType<Controller_Player>();
-    //        if (_Player == null)
-    //        {
-    //            GameObject container = new GameObject("Player");
-    //            _Player = container.AddComponent<Controller_Player>();
-    //        }
-    //        Debug.Log("Player==null");
-    //        DontDestroyOnLoad(_Player);
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Player=!null");
-    //        //this.gameObject.SetActive(false);
-    //        Destroy(this.gameObject);
-    //    }
-    //}
+    private void Awake()
+    {
+        if (_Player == null)
+        {
+            _Player = GameObject.FindObjectOfType<Controller_Player>();
+            if (_Player == null)
+            {
+                GameObject container = new GameObject("Player");
+                _Player = container.AddComponent<Controller_Player>();
+            }
+            //Debug.Log("Player==null");
+            DontDestroyOnLoad(_Player);
+        }
+        else
+        {
+            //Debug.Log("Player=!null");
+            //this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+        }
+    }
 
 
     private void Start()
